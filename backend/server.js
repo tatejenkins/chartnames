@@ -10,7 +10,8 @@ app.use(express.json())
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('../frontend/build'))
 }
-
+//production
+app.use(express.static('frontend/build/index.html'))
 
 app.use("/api/v1/names", names)
 app.use("*", (req, res) => res.status(404).json({ error: "This isn't a valid page.}"}))
