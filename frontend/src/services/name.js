@@ -3,7 +3,9 @@ import http from "../http-common";
 class NameDataService {
     find(query, by = "name", query2 = null, by2 = null) {
         if (query2) {
-            return http.get(`?${by}=${query}&${by2}=${query2}`);
+            let axiosgetreq = http.get(`?${by}=${query}&${by2}=${query2}`);
+            console.log(axiosgetreq);
+            return axiosgetreq;
         } else {
             return http.get(`?${by}=${query}`);
         }
