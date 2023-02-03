@@ -1,0 +1,15 @@
+# Node build artifacts
+node_modules
+**/node_modules
+npm-debug.log
+all_ranks_f.json
+all_ranks_m.json
+all_counts_f.json
+all_counts_m.json
+all_percentages_m.json
+all_percentages_f.json
+insert-data.*
+# Local development
+*.env
+*.dev
+.DS_Store
